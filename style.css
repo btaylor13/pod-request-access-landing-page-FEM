@@ -33,13 +33,27 @@ body {
   background-color: #121725;
 }
 
+.page-container {
+  position: relative;
+  margin: 5rem 0 auto 10rem;
+}
+
 .hero-img {
-  height: 43rem;
+  height: 50rem;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 3rem;
 }
 
 .card-container {
   display: flex;
   flex-direction: column;
+  background-color: var(--color-navy);
+  position: absolute;
+  width: 71rem;
+  padding: 5rem 0 5rem 0;
+  top: 13rem;
 }
 
 .heading {
@@ -48,6 +62,7 @@ body {
   text-transform: uppercase;
   line-height: 6.2rem;
   color: var(--color-mint-green);
+  padding-bottom: 2rem;
 }
 
 .heading__highlight {
@@ -58,9 +73,29 @@ body {
   font-size: 1.8rem;
   line-height: 2.8rem;
   color: var(--color-gray-light);
+  width: 63%;
+  padding-bottom: 2rem;
 }
 .form-container {
+  position: relative;
+  padding-bottom: 4.5rem;
+}
+
+.email {
+  min-width: 60%;
+  height: 3.9rem;
+  border: none;
+  border-radius: 3rem;
+  padding: 1.3rem;
   background-color: var(--color-gray-dark);
+}
+
+.email::placeholder {
+  font-family: "Chivo", sans-serif;
+  color: var(--color-gray-light);
+  padding-left: 1rem;
+  font-size: 1.15rem;
+  opacity: 0.75;
 }
 
 .request-btn {
@@ -73,8 +108,27 @@ body {
   font-size: 1.2rem;
   color: var(--color-navy);
   transition: all 0.2s;
+  position: absolute;
+  top: 1.5px;
+  margin-left: -13rem;
+
+  z-index: 2;
+  cursor: pointer;
 }
 
 .request-btn:hover {
   background-color: var(--color-mint-green-light);
+}
+
+.brand-names {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.design-dots {
+  position: absolute;
+  top: 48rem;
+  right: 0;
 }
