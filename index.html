@@ -27,17 +27,29 @@
   <body>
     <div class="page-container">
       <div class="logo">
-        <img src="assets/desktop/logo.svg" alt="logo" class="logo-img" /><span
-          class="logo-text"
-          >pod</span
-        >
+        <img src="assets/desktop/logo.svg" alt="logo" class="logo-img" />
       </div>
-      <div class="hero-image">
-        <img
+      <div>
+        <!-- <img
           src="assets/desktop/image-host.jpg"
-          alt="picture of person recording a podcast"
+          alt="person recording a podcast"
           class="hero-img"
-        />
+        /> -->
+        <picture>
+          <source
+            srcset="assets/desktop/image-host.jpg"
+            media="(min-width: 45rem)"
+          />
+          <source
+            srcset="assets/tablet/image-host.jpg"
+            media="(min-width: 35rem)"
+          />
+          <img
+            src="assets/mobile/image-host.jpg"
+            alt="person recording a podcast"
+            class="hero-img"
+          />
+        </picture>
       </div>
       <div class="card-container">
         <div class="text-content">
@@ -54,6 +66,7 @@
             <form class="form">
               <input
                 type="email"
+                name="email"
                 class="email"
                 id="email"
                 placeholder="Email address"
@@ -64,6 +77,7 @@
                 id="request-btn"
                 value="Request Access"
               />
+              <p class="validation-message" id="validation-message"></p>
             </form>
           </div>
         </div>
@@ -98,5 +112,6 @@
         />
       </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@
   --color-gray-dark: #2c344b;
   --color-navy: #121725;
   --color-white: #ffffff;
+  --color-error: #fb3e3e;
 }
 
 *,
@@ -33,9 +34,11 @@ body {
   background-color: #121725;
 }
 
+/* HERO SECTION  */
 .page-container {
   position: relative;
   margin: 5rem 0 auto 10rem;
+  max-width: 1440px;
 }
 
 .hero-img {
@@ -76,6 +79,49 @@ body {
   width: 63%;
   padding-bottom: 2rem;
 }
+
+/* MEDIA QUERIES FOR TEXT CONTENT */
+
+@media only screen and (max-width: 44.999rem) {
+  .page-container {
+    max-width: 48.125rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 0;
+    margin-bottom: auto;
+  }
+
+  .hero-img {
+    height: 52rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .card-container {
+    background-color: var(--color-navy);
+    position: absolute;
+    max-width: 44rem;
+    padding: 5rem 0 5rem 3rem;
+    top: 16rem;
+    margin-left: -3rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    width: 63%;
+    padding-bottom: 2rem;
+  }
+}
+
+/* FORM SECTION */
 .form-container {
   position: relative;
   padding-bottom: 4.5rem;
@@ -88,6 +134,8 @@ body {
   border-radius: 3rem;
   padding: 1.3rem;
   background-color: var(--color-gray-dark);
+  color: var(--color-white);
+  font-family: inherit;
 }
 
 .email::placeholder {
@@ -120,6 +168,16 @@ body {
   background-color: var(--color-mint-green-light);
 }
 
+.validation-message {
+  color: var(--color-error);
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.7rem 1.3rem;
+}
+
+/* OTHER */
+
 .brand-names {
   display: flex;
   width: 75%;
@@ -131,4 +189,18 @@ body {
   position: absolute;
   top: 48rem;
   right: 0;
+}
+
+@media only screen and (max-width: 44.999rem) {
+  .brand-names {
+    width: 88%;
+  }
+  .brand-name {
+    height: 1.625rem;
+  }
+  .design-dots-svg {
+    position: fixed;
+    bottom: 0;
+    left: 2rem;
+  }
 }
