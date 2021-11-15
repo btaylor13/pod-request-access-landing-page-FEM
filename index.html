@@ -25,91 +25,94 @@
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
   <body>
-    <div class="page-container">
-      <div class="logo">
-        <img src="assets/desktop/logo.svg" alt="logo" class="logo-img" />
-      </div>
-      <div>
-        <!-- <img
+    <div class="outer-container">
+      <div class="page-container">
+        <div class="logo">
+          <img src="assets/desktop/logo.svg" alt="logo" class="logo-img" />
+        </div>
+        <div>
+          <!-- <img
           src="assets/desktop/image-host.jpg"
           alt="person recording a podcast"
           class="hero-img"
         /> -->
-        <picture>
-          <source
-            srcset="assets/desktop/image-host.jpg"
-            media="(min-width: 45rem)"
-          />
-          <source
-            srcset="assets/tablet/image-host.jpg"
-            media="(min-width: 35rem)"
-          />
-          <img
-            src="assets/mobile/image-host.jpg"
-            alt="person recording a podcast"
-            class="hero-img"
-          />
-        </picture>
-      </div>
-      <div class="card-container">
-        <div class="text-content">
-          <h1 class="heading">
-            Publish your podcasts
-            <span class="heading__highlight">everywhere.</span>
-          </h1>
-          <p class="paragraph">
-            Upload your audio to Pod with a single click. We’ll then distribute
-            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
-            Casts and more!
-          </p>
-          <div class="form-container">
-            <form class="form">
-              <input
-                type="email"
-                name="email"
-                class="email"
-                id="email"
-                placeholder="Email address"
+          <picture>
+            <source
+              srcset="assets/desktop/image-host.jpg"
+              media="(min-width: 71.9rem)"
+            />
+            <source
+              srcset="assets/tablet/image-host.jpg"
+              media="(min-width: 55.9rem)"
+            />
+            <img
+              src="assets/mobile/image-host.jpg"
+              alt="person recording a podcast"
+              class="hero-img"
+            />
+          </picture>
+        </div>
+        <div class="card-container">
+          <div class="text-content">
+            <h1 class="heading">
+              Publish your podcasts
+              <span class="heading__highlight">everywhere.</span>
+            </h1>
+            <p class="paragraph">
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
+            <div class="form-container">
+              <form class="form">
+                <input
+                  type="email"
+                  name="email"
+                  class="email"
+                  id="email"
+                  placeholder="Email address"
+                />
+                <input
+                  type="submit"
+                  class="request-btn"
+                  id="request-btn"
+                  value="Request Access"
+                />
+                <p class="validation-message" id="validation-message"></p>
+              </form>
+            </div>
+
+            <div class="brand-names">
+              <img
+                src="assets/desktop/spotify.svg"
+                alt="Spotify name and logo"
+                class="brand-name"
               />
-              <input
-                type="submit"
-                class="request-btn"
-                id="request-btn"
-                value="Request Access"
+              <img
+                src="assets/desktop/apple-podcast.svg"
+                alt="Apple podcasts name and logo"
+                class="brand-name"
               />
-              <p class="validation-message" id="validation-message"></p>
-            </form>
+              <img
+                src="assets/desktop/google-podcasts.svg"
+                alt="Google podcasts name and logo"
+                class="brand-name"
+              />
+              <img
+                src="assets/desktop/pocket-casts.svg"
+                alt=""
+                class="brand-name"
+              />
+            </div>
           </div>
         </div>
-        <div class="brand-names">
+        <div class="design-dots">
           <img
-            src="assets/desktop/spotify.svg"
-            alt="Spotify name and logo"
-            class="brand-name"
-          />
-          <img
-            src="assets/desktop/apple-podcast.svg"
-            alt="Apple podcasts name and logo"
-            class="brand-name"
-          />
-          <img
-            src="assets/desktop/google-podcasts.svg"
-            alt="Google podcasts name and logo"
-            class="brand-name"
-          />
-          <img
-            src="assets/desktop/pocket-casts.svg"
-            alt=""
-            class="brand-name"
+            src="assets/desktop/bg-pattern-dots.svg"
+            alt="design dots"
+            class="design-dots-svg"
           />
         </div>
-      </div>
-      <div class="design-dots">
-        <img
-          src="assets/desktop/bg-pattern-dots.svg"
-          alt="design dots"
-          class="design-dots-svg"
-        />
       </div>
     </div>
     <script src="scripts.js"></script>
