@@ -43,6 +43,10 @@ body {
   max-width: 1440px;
 }
 
+.outer-container {
+  position: relative;
+}
+
 .hero-img {
   height: 50rem;
   position: absolute;
@@ -237,6 +241,12 @@ body {
   margin: 0.7rem 1.3rem;
 }
 
+@media only screen and (max-width: 71.999rem) {
+  .email {
+    width: 67%;
+  }
+}
+
 /* MEDIA QUERIES FOR FORM mobile */
 @media only screen and (max-width: 55.999rem) {
   .form-container {
@@ -284,15 +294,15 @@ body {
 .design-dots {
   position: absolute;
   top: 48rem;
-  right: 0;
+  right: 1rem;
 }
 
 @media only screen and (max-width: 71.999rem) {
   .brand-names {
-    width: 70%;
+    width: 83%;
   }
   .brand-name {
-    height: 1.625rem;
+    height: 2.6rem;
   }
   .design-dots-svg {
     position: fixed;
@@ -301,7 +311,6 @@ body {
   }
 }
 
-/* MEDIA QUERIES MOBILE */
 @media only screen and (max-width: 55.9rem) {
   .brand-names {
     justify-content: space-evenly;
